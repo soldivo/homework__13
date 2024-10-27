@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG</title>
+    <style>
+      .square rect {
+        animation: square 5s linear infinite alternate forwards;
+      }
+
+      .rectangle rect {
+        animation: rectangle 5s linear infinite alternate forwards;
+      }
+
+      .circle circle {
+        animation: circle 5s linear infinite alternate forwards;
+      }
+
+      .ellipse ellipse {
+        animation: ellipse 5s linear infinite alternate forwards;
+      }
+
+      @keyframes square {
+        from {
+          fill: red;
+          stroke: blue;
+        }
+        to {
+          fill: blue;
+          stroke: red;
+        }
+      }
+
+      @keyframes rectangle {
+        from {
+          fill: yellow;
+          stroke: paleturquoise;
+        }
+        to {
+          fill: paleturquoise;
+          stroke: yellow;
+        }
+      }
+
+      @keyframes circle {
+        from {
+          fill: blue;
+          stroke: red;
+        }
+        to {
+          fill: red;
+          stroke: blue;
+        }
+      }
+
+      @keyframes ellipse {
+        from {
+          fill: green;
+          stroke: fuchsia;
+        }
+        to {
+          fill: fuchsia;
+          stroke: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <svg class="square" width="200" height="200">
+        <rect width="200" height="200" style="stroke-width: 5" />
+      </svg>
+      <svg class="rectangle" width="400" height="200">
+        <rect width="400" height="200" style="stroke-width: 5" />
+      </svg>
+      <svg class="circle" width="200" height="200">
+        <circle cx="100" cy="100" r="90" style="stroke-width: 5" />
+      </svg>
+      <svg class="ellipse" height="140" width="500">
+        <ellipse rx="100" ry="50" cx="120" cy="80" style="stroke-width: 5" />
+      </svg>
+    </div>
+  </body>
+</html>
